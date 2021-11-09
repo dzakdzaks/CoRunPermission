@@ -269,10 +269,10 @@ class RuntimePermission(activity: FragmentActivity?) {
 
     //endregion
     init {
-        if (activity != null) {
-            activityReference = WeakReference(activity)
+        activityReference = if (activity != null) {
+            WeakReference(activity)
         } else {
-            activityReference = WeakReference(null)
+            WeakReference(null)
         }
     }
 }
