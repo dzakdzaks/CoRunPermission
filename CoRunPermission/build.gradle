@@ -4,8 +4,8 @@ plugins {
     id 'maven-publish'
 }
 
-group = 'com.dzakdzaks'
-version = '0.0.6'
+group = 'com.github.dzakdzaks'
+version = '0.0.7'
 
 android {
     compileSdk 31
@@ -47,9 +47,9 @@ afterEvaluate {
             release(MavenPublication) {
                 from components.release
 
-                groupId = 'com.dzakdzaks'
+                groupId = 'com.github.dzakdzaks'
                 artifactId = 'co_run_permission'
-                version = '0.0.6'
+                version = '0.0.7'
             }
         }
     }
