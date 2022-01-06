@@ -46,7 +46,6 @@ class PermissionFragment : Fragment() {
         val askAgainPermissions: MutableList<String> = ArrayList()
         val refusedPermissions: MutableList<String> = ArrayList()
         resultPermission.forEach {
-            val permissionName = resultPermission
             if (it.value) {
                 acceptedPermissions.add(it.key)
             } else {
